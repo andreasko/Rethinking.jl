@@ -3,6 +3,14 @@ uuid = "e2bb8afa-29e4-4736-9c1c-50902cbe280d"
 authors = ["andreas koher"]
 version = "0.1.0"
 
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+PrettyTables = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+Turing = "fce5fe82-541a-59a6-adf8-730c64b5f9a0"
+
 [compat]
 julia = "1.5"
 
