@@ -4,7 +4,18 @@ using Turing
 using DataFrames
 using PrettyTables
 
-@testset "quap" begin
+@testset "univariate quap" begin
+    @model function test(y)
+        μ ~ Normal(10, 1)
+        y .~ Normal(μ, 1)
+    end
+    y = randn(1000) .+ 10
+    res = quap(test(y))
+    μ = res.coef.μ
+    @test round(μ) == 10
+end
+
+@testset "multivariate quap" begin
     @model function test(y)
         μ ~ Normal(10, 1)
         σ ~ Exponential(5)
