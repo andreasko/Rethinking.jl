@@ -5,7 +5,6 @@ using StatsBase
 using Optim
 using Turing
 using LinearAlgebra
-using StatsBase
 using DataFrames
 
 include("quap.jl")
